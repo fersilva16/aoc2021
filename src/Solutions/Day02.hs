@@ -13,9 +13,10 @@ parseCommand (c:s:_)
     "forward" -> Forward steps
     "down"    -> Down steps
     "up"      -> Up steps
-    otherwise -> error "Unreachable"
+    _         -> error "Unreachable"
   where
     steps = read s
+parseCommand _ = error "Unreachable"
 
 evalCommandsA :: (Int, Int) -> [Command] -> (Int, Int)
 evalCommandsA (h, d) (c:cs) = evalCommandsA currentPosition cs
@@ -43,7 +44,6 @@ evalCommandsB p _ = p
 day02b :: [Command] -> Int
 day02b cs = totalHorizontal * totalDepth
   where (totalHorizontal, _, totalDepth) = evalCommandsB (0, 0, 0) cs
-
 
 
 day02 :: IO ()
