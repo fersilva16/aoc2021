@@ -1,5 +1,5 @@
 # Advent of Code 2021 [![MIT License][license-shield]][license-url] [![Twitter][twitter-shield]][twitter-url]
-My solutions for [Advent of Code 2021][adventofcode-url] using [Haskell][haskell-url]. Since I'm starting with Haskell, some solutions may be wrong.
+My solutions for [Advent of Code 2021][adventofcode-url] using [Haskell][haskell-url]. Since I'm starting with the language, some solutions may be wrong.
 
 <!-- Links and images -->
 [license-shield]: https://img.shields.io/github/license/fersilva16/aoc2021?style=flat-square
