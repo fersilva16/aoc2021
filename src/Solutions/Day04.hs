@@ -29,12 +29,12 @@ day04b (n:ns) bs
     nbs = filter (not . bingo) . map (map (map (\(x, y) -> (x, y || x == n)))) $ bs
 day04b _ _ = error "Unreachable"
 
-parser :: String -> ([Int], [[[(Int, Bool)]]])
-parser input = (ns, bs)
+day04parser :: String -> ([Int], [[[(Int, Bool)]]])
+day04parser input = (ns, bs)
   where
     ns = map read . splitOn "," $ uns
     bs = map (map (map ((,False) . read) . words . trim) . lines) ubs
     (uns:ubs) = splitOn "\n\n" input
 
 day04 :: IO ()
-day04 = solution2 "04" parser day04a day04b
+day04 = solution2 "04" day04parser day04a day04b
