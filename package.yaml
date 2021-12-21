@@ -10,6 +10,7 @@ description:         Please see the README on GitHub at <https://github.com/fers
 dependencies:
 - base >= 4.7 && < 5
 - split
+- lens
 
 executables:
   aoc2021-exe:

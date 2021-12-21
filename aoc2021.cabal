@@ -29,11 +29,13 @@ executable aoc2021-exe
       Solutions.Day02
       Solutions.Day03
       Solutions.Day04
+      Solutions.Day06
       Paths_aoc2021
   hs-source-dirs:
       src
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , lens
     , split
   default-language: Haskell2010
